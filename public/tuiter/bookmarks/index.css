@@ -1,0 +1,53 @@
+
+.wd-font-size-20 {
+    font-size: 20px;
+}
+
+.wd-fg-color-red {
+    color: red;
+}
+
+.wd-img-circle {
+    border-radius: 50px;
+}
+
+.wd-img-resize-48 {
+    width: 48px;
+    height: 48px;
+}
+
+.wd-width-504 {
+    width: 504px;
+}
+
+.wd-height-264 {
+    height: 264px;
+}
+
+.wd-border-top-left-radius-20 {
+    border-top-left-radius: 20px;
+}
+
+.wd-border-top-right-radius-20 {
+    border-top-right-radius: 20px;
+}
+
+.wd-border-bottom-left-radius-20 {
+    border-bottom-left-radius: 20px;
+}
+
+.wd-border-bottom-right-radius-20 {
+    border-bottom-right-radius: 20px;
+}
+
+.wd-margin-left-100 {
+    margin-left: 100px;
+}
+
+.wd-flex-grow-1 {
+    flex-grow: 1;
+}
+
+.wd-max-width-506 {
+    max-width: 506px;
+}
