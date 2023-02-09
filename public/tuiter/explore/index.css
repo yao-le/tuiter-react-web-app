@@ -54,3 +54,7 @@ div.wd-input-field {
     color: black;
     font-weight: bold;
 }
+
+.w-80 {
+    width: 80%;
+}
