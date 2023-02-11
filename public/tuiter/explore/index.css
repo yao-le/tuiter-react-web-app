@@ -30,6 +30,12 @@
     background-color: rgb(247, 249, 249);
 }
 
+.wd-border-x-light-gray {
+    border-width: 1px;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: rgb(247, 249, 249);
+}
 
 div.wd-input-field {
     height: 45px;
