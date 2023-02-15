@@ -1,0 +1,16 @@
+.wd-border-radius-20 {
+    border-radius: 20px;
+}
+
+.wd-border-radius-top-20 {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.wd-bg-black {
+    background-color: #060606;
+}
+
+.wd-margin-left-80 {
+    margin-left: 80px;
+}
