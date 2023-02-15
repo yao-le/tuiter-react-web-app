@@ -3,7 +3,7 @@ const PostItem = (post) => {
         <div class="mx-2 my-2 d-flex flex-row">
             <div>
                 <img width="48px" height="48px"
-                     src=${post.avatar}
+                     src=${`../../images/${post.avatar}`}
                      class="rounded-circle"
                      alt="avatar">
             </div>
@@ -25,7 +25,7 @@ const PostItem = (post) => {
                 <p>${post.content}</p>
                
                 <div class="wd-border-radius-20 border border-secondary" >
-                     <img src=${post.image} 
+                     <img src=${`../../images/${post.image}`}
                           class="card-img-top ${post.hasAbstract ? "wd-border-radius-top-20 border-bottom border-secondary" 
                                                                     : "wd-border-radius-20"}" 
                           alt="image">
