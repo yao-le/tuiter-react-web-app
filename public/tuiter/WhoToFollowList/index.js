@@ -9,7 +9,7 @@ const WhoToFollowList = () => {
             </div>
           
             ${
-                who.map(w => `${WhoToFollowListItem(w)}`).join('')
+                who.map(w => WhoToFollowListItem(w)).join('')
             }   
         </div>
     `);

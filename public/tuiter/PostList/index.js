@@ -6,11 +6,7 @@ const PostList = () => {
     return `
         <ul class="list-group list-group-flush">
             ${
-            posts.map(p =>
-            `<li class="list-group-item wd-bg-black">
-                        ${PostItem(p)}
-             </li>`
-            ).join('')
+                posts.map(p => PostItem(p)).join('')
             }
         </ul>
     `

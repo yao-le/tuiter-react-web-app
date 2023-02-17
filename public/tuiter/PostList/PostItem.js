@@ -1,5 +1,6 @@
 const PostItem = (post) => {
     return `
+    <div class="list-group-item wd-bg-black">
         <div class="mx-2 my-2 d-flex flex-row">
             <div>
                 <img width="48px" height="48px"
@@ -66,6 +67,7 @@ const PostItem = (post) => {
                 </div>
             </div>
         </div>  
+    </div>
     `
 }
 
