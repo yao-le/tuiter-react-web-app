@@ -61,7 +61,7 @@ const ExploreComponent = () => {
            <div class="mt-2">
                 <!-- image-->
                 <div class="position-relative">
-                    <img src="../../images/Starship-Mk1-Day.webp" class="card-img-top" alt="img">
+                    <img src="../../images/spaceX.jpg" class="card-img-top" alt="img">
                     <div class="position-absolute bottom-0 start-0">
                         <h2 class="text-white ms-2">SpaceX's Starship</h2>
                     </div>
