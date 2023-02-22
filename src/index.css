@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.wd-border-radius-20 {
+  border-radius: 20px;
+}
+
+.wd-border-radius-top-20 {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.wd-bg-black {
+  background-color: #060606;
+}
+
+.wd-margin-left-80 {
+  margin-left: 80px;
+}
+
+.wd-fg-color-blue {
+  color: rgb(29,161,242);
+}
+
+.wd-img-20 {
+  width: 20px;
+  height: 20px;
+}
+
+.wd-img-25 {
+  width: 25px;
+  height: 25px;
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "_id": 1,
+    "avatar": "nypost.jpg",
+    "userName": "New York Post",
+    "handle": "nypost",
+    "time": "23h",
+    "content": "Chemicals in household products could cause cancer, diabetes in kids: study ",
+    "contentLink": "trib.al/9mJ4eds",
+    "showImage": true,
+    "image":"post_img1.jpg",
+    "hasAbstract": false,
+    "commentNo": "4.2K",
+    "retweetNo": "3.5K",
+    "likeNo": "37.5K",
+    "showThread": true,
+    "showRetweet": true
+  },
+  {
+    "_id": 2,
+    "avatar": "musk.jpg",
+    "userName": "Elon Musk",
+    "handle": "elonmusk",
+    "time": "15h",
+    "content": "We might need a different name, as this is basically just Starlink with roaming capability, so you can take your terminal anywhere.",
+    "showImage": false,
+    "hasAbstract": true,
+    "abstractAvatar": "spaceX-icon.jpg",
+    "abstractUser": "SpaceX",
+    "abstractHandle" : "SpaceX",
+    "abstractTime": "16h",
+    "abstractContent": "Starlink for RVs now has over 100,000 customers! Access high-speed, low-latency internet on an as-needed basis anywhere Starlink provides active coverage → http://starlink.com/rv",
+    "commentNo": "965",
+    "retweetNo": "2.4K",
+    "likeNo": "4K",
+    "showThread": false,
+    "showRetweet": false
+  }
+]
+
+
