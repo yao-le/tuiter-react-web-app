@@ -1,17 +1,12 @@
-
-import React, {useState} from "react";
+import React from "react";
+import {useDispatch} from "react-redux";
+import {updateLike} from "./tuits-reducer";
 
 const TuitStats = ({post}) => {
-    const [liked, setLiked] = useState(post.liked); // boolean
-    const [likes, setLikes] = useState(post.likes); // number
+    const dispatch = useDispatch();
 
-    const handleClickLike = () => {
-        if (liked) {
-            setLikes(likes - 1);
-        } else {
-            setLikes(likes + 1);
-        }
-        setLiked(!liked);
+    const clickLikeHandler = (post) => {
+        dispatch(updateLike(post));
     }
 
     return (
@@ -28,9 +23,9 @@ const TuitStats = ({post}) => {
             </a>
 
             <a href="#" className="d-flex flex-row align-items-center text-decoration-none
-                    text-muted w-25" onClick={handleClickLike}>
-                <i className={`bi bi-heart-fill ${liked? "text-danger" : ""}`}></i>
-                <div className="ms-2">{likes}</div>
+                    text-muted w-25" onClick={() => clickLikeHandler(post)}>
+                <i className={`bi bi-heart-fill ${post.liked? "text-danger" : ""}`}></i>
+                <div className="ms-2">{post.likes}</div>
             </a>
 
             <a href="#" className="d-flex flex-row align-items-center text-decoration-none
