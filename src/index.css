@@ -43,3 +43,27 @@ code {
   width: 25px;
   height: 25px;
 }
+
+.wd-img-150 {
+  width: 150px;
+  height: 150px;
+}
+
+.wd-width-90 {
+  width: 90%;
+}
+
+.wd-avatar-position {
+  position: absolute;
+  top: -100px;
+  left: 30px;
+}
+
+.wd-margin-top-80 {
+  margin-top: 80px;
+}
+
+
+textarea:focus {
+  outline: none;
+}
