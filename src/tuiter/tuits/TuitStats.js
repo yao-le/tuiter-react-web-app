@@ -1,35 +1,47 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {updateLike} from "./tuits-reducer";
+import {updateTuitThunk} from "../../services/tuits-thunks";
 
-const TuitStats = ({post}) => {
+const TuitStats = ({tuit}) => {
     const dispatch = useDispatch();
 
-    const clickLikeHandler = (post) => {
-        dispatch(updateLike(post));
-    }
-
     return (
-        <div className="d-flex flex-row align-items-center mt-3">
-            <a href="#" className="d-flex flex-row align-items-center text-decoration-none text-muted w-25">
+        <div className="d-flex flex-row align-items-center mt-3 justify-content-around">
+            <a href="#" className="d-flex flex-row align-items-center text-decoration-none
+            text-muted wd-width-20">
                 <i className="bi bi-chat-fill"></i>
-                <div className="ms-2">{post.replies}</div>
+                <div className="ms-2">{tuit.replies}</div>
             </a>
 
             <a href="#" className="d-flex flex-row align-items-center text-decoration-none
-                    text-muted w-25">
+                    text-muted wd-width-20">
                 <i className="bi bi-repeat"></i>
-                <div className="ms-2">{post.retuits}</div>
+                <div className="ms-2">{tuit.retuits}</div>
+            </a>
+
+
+            <a href="#" className="d-flex flex-row align-items-center text-decoration-none
+                    text-muted wd-width-20">
+                <i onClick={() => dispatch(updateTuitThunk({
+                    ...tuit,
+                    likes: tuit.likes + 1
+                }))} className="bi bi-heart-fill text-danger"></i>
+                <div className="ms-2">{tuit.likes}</div>
             </a>
 
             <a href="#" className="d-flex flex-row align-items-center text-decoration-none
-                    text-muted w-25" onClick={() => clickLikeHandler(post)}>
-                <i className={`bi bi-heart-fill ${post.liked? "text-danger" : ""}`}></i>
-                <div className="ms-2">{post.likes}</div>
+                    text-muted wd-width-20">
+
+                <i onClick={() => dispatch(updateTuitThunk({
+                    ...tuit,
+                    dislikes: tuit.dislikes + 1
+                }))} className="bi bi-hand-thumbs-down-fill"></i>
+                <div className="ms-2">{tuit.dislikes}</div>
+
             </a>
 
             <a href="#" className="d-flex flex-row align-items-center text-decoration-none
-                    text-muted w-25">
+                    text-muted wd-width-20">
                 <i className="bi bi-share-fill"></i>
             </a>
         </div>

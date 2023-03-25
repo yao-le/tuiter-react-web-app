@@ -53,6 +53,10 @@ code {
   width: 90%;
 }
 
+.wd-width-20 {
+  width: 20%;
+}
+
 .wd-avatar-position {
   position: absolute;
   top: -100px;
