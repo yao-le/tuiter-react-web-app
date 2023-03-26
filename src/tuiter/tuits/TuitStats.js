@@ -7,29 +7,29 @@ const TuitStats = ({tuit}) => {
 
     return (
         <div className="d-flex flex-row align-items-center mt-3 justify-content-around">
-            <a href="#" className="d-flex flex-row align-items-center text-decoration-none
+            <div className="d-flex flex-row align-items-center text-decoration-none
             text-muted wd-width-20">
                 <i className="bi bi-chat-fill"></i>
                 <div className="ms-2">{tuit.replies}</div>
-            </a>
+            </div>
 
-            <a href="#" className="d-flex flex-row align-items-center text-decoration-none
+            <div className="d-flex flex-row align-items-center text-decoration-none
                     text-muted wd-width-20">
                 <i className="bi bi-repeat"></i>
                 <div className="ms-2">{tuit.retuits}</div>
-            </a>
+            </div>
 
 
-            <a href="#" className="d-flex flex-row align-items-center text-decoration-none
+            <div className="d-flex flex-row align-items-center text-decoration-none
                     text-muted wd-width-20">
                 <i onClick={() => dispatch(updateTuitThunk({
                     ...tuit,
                     likes: tuit.likes + 1
                 }))} className="bi bi-heart-fill text-danger"></i>
                 <div className="ms-2">{tuit.likes}</div>
-            </a>
+            </div>
 
-            <a href="#" className="d-flex flex-row align-items-center text-decoration-none
+            <div className="d-flex flex-row align-items-center text-decoration-none
                     text-muted wd-width-20">
 
                 <i onClick={() => dispatch(updateTuitThunk({
@@ -38,12 +38,12 @@ const TuitStats = ({tuit}) => {
                 }))} className="bi bi-hand-thumbs-down-fill"></i>
                 <div className="ms-2">{tuit.dislikes}</div>
 
-            </a>
+            </div>
 
-            <a href="#" className="d-flex flex-row align-items-center text-decoration-none
+            <div className="d-flex flex-row align-items-center text-decoration-none
                     text-muted wd-width-20">
                 <i className="bi bi-share-fill"></i>
-            </a>
+            </div>
         </div>
     )
 
